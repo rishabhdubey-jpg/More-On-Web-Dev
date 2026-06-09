@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    .parent{
+        border: 3px solid;
+        height: 700px;
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-columns: 200px 300px 200px;
+        grid-template-rows: 200px 200px 200px;
+        /* grid-auto-flow: column; */ /* it will fill the grid column wise */
+        /* grid-auto-flow: row; */ /* it will fill the grid row wise */
+    }
+    .child{
+        background-color: lightblue;
+        border: 1px solid brown;
+    }
+    #one{
+        background-color: darksalmon;
+      /* grid-row-start: 2; */  /* it will start from row 2 */
+    }
+    #two{
+        background-color: aqua;
+    }
+    #three{
+        background-color: lightcoral;
+    }
+</style>
+<body>
+    
+    <div class="parent">
+        <div class="child" id="one">1</div>
+        <div class="child" id="two">2</div>
+        <div class="child" id="three">3</div>
+        <div class="child" id="four">4</div>
+        <div class="child" id="five">5</div>
+        <div class="child" id="six">6</div>
+        <div class="child" id="seven">7</div>
+        <div class="child" id="eight">8</div>
+        <div class="child" id="nine">9</div>
+        <div class="child" id="ten">10</div>
+    </div>
+</body>
+</html>

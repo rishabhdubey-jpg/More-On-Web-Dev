@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #parent {
+        /* width: 700px; */
+        height: 500px;
+        border: 2px solid black;
+    }
+
+    .one {
+        width: 100px;
+        height: 100px;
+        transition: 2s;
+        border-radius: 10%;
+    }
+
+    #parent:hover .one {
+        margin-left: 471px;
+        border-radius: 60%;
+        transform: rotateY(360deg);
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px -10px;
+    }
+
+    #one {
+        background-color: aqua;
+        transition-timing-function: ease-in-out;
+    }
+
+    #two {
+        background-color: palegreen;
+        transition-timing-function: linear;
+    }
+
+    #three {
+        background-color: lightcoral;
+        transition-timing-function: ease;
+    }
+
+    #four {
+        background-color: lightsalmon;
+        transition-timing-function: ease-out;
+    }
+
+    #five {
+        background-color: lightskyblue;
+        transition-timing-function: cubic-bezier(0.15, 0.46, 0.17);
+    }
+</style>
+
+<body>
+    <div id="parent">
+        <div class="one" id="one"></div>
+        <div class="one" id="two"></div>
+        <div class="one" id="three"></div>
+        <div class="one" id="four"></div>
+        <div class="one" id="five"></div>
+        <div class="one" id="six"></div>
+        <div class="one" id="seven"></div>
+        <div class="one" id="eight"></div>
+        <div class="one"></div>
+    </div>
+</body>
+
+</html>
