@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Lecture 1</title>
+</head>
+
+<body>
+    <h1>hello</h1>
+    <script>
+        // console.log("Hello World!");
+        // console.error("errorrrrr");
+        // console.warn("warninggggg");
+
+        //     Datatypes in JavaScript:
+        //     1. Number - 1, 2, 3.14, -5
+        //     2. String - "Hello", 'World'
+        //     3. Boolean - true, false
+        //     4. Null - null
+        //     5. Undefined - undefined
+        //     6. Symbol - Symbol('id')
+        //     7. BigInt - 9007199254740991n
+
+        // Variable declaration:
+        // 1. var - function-scoped, can be redeclared and updated
+        //    var x = 10;
+        //    var x = 20; // redeclaration allowed
+        //        x = 30; // update allowed
+
+        // 2. let - block-scoped, cannot be redeclared but can be updated
+        //      let y = 10;
+        //      // let y = 20; // redeclaration not allowed
+        //           y = 30; // update allowed
+
+        // 3. const - block-scoped, cannot be redeclared or updated
+        //      const z = 10;
+        //         // const z = 20; // redeclaration not allowed
+        //         // z = 30; // update not allowed
+
+        a = 5
+        console.log(a); // 5
+
+        // console.log(window); // global object in browser
+
+        let a;
+        console.log(a); // undefined
+
+        // in and of loops in JavaScript:
+        // let arr = [10, 20, 30];
+        // for (let i in arr) {
+        //     console.log(i); // 0, 1, 2 (index)
+        // }
+        // for (let value of arr) {
+        // //     console.log(value); // 10, 20, 30 (value)
+        // }
+
+        let student = {
+            RollNo:420,
+            name: "John",
+            age: 20
+        }
+        console.log(student.RollNo);
+        console.log(student.name);
+        console.log(student.age);
+
+
+
+
+    </script>
+</body>
+
+</html>
